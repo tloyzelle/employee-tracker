@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/tloyzelle/Employee_Tracker/issues"
   },
-  "homepage": "https://github.com/tloyzelle/Employee_Tracker#readme"
+  "homepage": "https://github.com/tloyzelle/Employee_Tracker#readme",
+  "dependencies": {
+    "mysql": "^2.18.1"
+  }
 }
