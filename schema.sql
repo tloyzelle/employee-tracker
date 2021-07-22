@@ -1,6 +1,6 @@
 DROP DATABASE IF EXISTS manage_db;
 
-CREATE DATABSE manage.db;
+CREATE DATABASE manage_db;
 
 CREATE TABLE department (
     id INT NOT NULL AUTO_INCREMENT,
@@ -26,7 +26,7 @@ CREATE TABLE employee (
     FOREIGN KEY (role_id) REFERENCES role(id),
     FOREIGN KEY (manager_id) REFERENCES manager(id),
     PRIMARY KEY (id)
-)
+);
 
 INSERT INTO department (name)
 VALUES ('Programming'), ('IT'), ('Customer Service');
