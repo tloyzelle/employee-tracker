@@ -15,6 +15,7 @@ CREATE TABLE role (
   title VARCHAR(30) NULL,
   salary DECIMAL(10,2) NULL,
   department_id INT NULL,
+  FOREIGN KEY (department_id) REFERENCES department(id),
   PRIMARY KEY (id)
 );
 
@@ -33,7 +34,7 @@ INSERT INTO department (name)
 VALUES ('Programming'), ('IT'), ('Customer Service');
 
 INSERT INTO role (title, salary, department_id)
-VALUES ('Jr. Programmer', 27.00, 1), ('Moderate Programmer', 35.00, 2), ('Snr. Programmer', 45.00, 3), ('Technician', 37.00, 4), ('Customer Service', 30.00, 5), ('Customer Service Manager', 43.00, 6);
+VALUES ('Jr. Programmer', 27.00, 1), ('Moderate Programmer', 35.00, 1), ('Snr. Programmer', 45.00, 1), ('Technician', 37.00, 2), ('Customer Service', 30.00, 3), ('Customer Service Manager', 43.00, 3);
 
 INSERT INTO  employee (first_name, last_name, role_id, manager_id)
-VALUES ('Lily','Orr', 1, NULL), ('Chrstine', 'Dawson', 1, NULL), ('Ben', 'Purvis', 2, NULL), ('Hayden', 'Matthews', 3, 1), ('Dalton', 'Anderson', 4, NULL), ('Joey', 'Marks', 4, 2), ('Maddy', 'Moorefield', 5, NULL), ('Jessica', 'Stevens', 6, 3);
+VALUES ('Lily','Orr', 1, NULL), ('Chrstine', 'Dawson', 1, NULL), ('Ben', 'Purvis', 1, NULL), ('Hayden', 'Matthews', 2, 1), ('Dalton', 'Anderson', 3, NULL), ('Joey', 'Marks', 1, 2), ('Maddy', 'Moorefield', 3, NULL), ('Jessica', 'Stevens', 2, 3);
