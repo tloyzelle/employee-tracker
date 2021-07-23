@@ -17,6 +17,7 @@ This interface allows for a easy way to view and interact with stored informatio
 
 ## Installation
 Run 'npm i' within terminal to download all needed dependencies.
+
 Then 'node emptrak.js' to begin interface.
 
 ## Use
