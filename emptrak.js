@@ -37,11 +37,11 @@ function startPrompt() {
         }
     ]).then(function(val) {
         switch (val.choice) {
-            case "Employee List":
+            case "Employees List":
               viewAllEmployees();
             break;
     
-          case "Employee Roles":
+          case "Employees Roles":
               viewAllRoles();
             break;
           case "Employee Departments":
@@ -66,7 +66,7 @@ function startPrompt() {
     
             }
     })
-}
+};
 
 //view employees
 function viewAllEmployees() {
@@ -76,7 +76,7 @@ function viewAllEmployees() {
       console.table(res)
       startPrompt()
   })
-}
+};
 
 //view roles
 function viewAllRoles() {
@@ -86,7 +86,7 @@ function viewAllRoles() {
         console.table(res)
         startPrompt()
     })
-}
+};
 
 //view departments
 function viewAllDepartments() {
@@ -96,7 +96,7 @@ function viewAllDepartments() {
       console.table(res)
       startPrompt()
     })
-  }
+};
 
 
 //adding employees
@@ -129,7 +129,7 @@ function addEmployee() {
         const lastName = res.lastName;
         const employRoleID = res.addEmployRole;
         const employManID = res.addManager;
-        const query = `INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ("${firstName}", "${lastName}", "${employRoleID}" "${emplyManID}")`;
+        const query = `INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ("${firstName}", "${lastName}", "${employRoleID}" "${employManID}")`;
         connection.query(query, function (err, res) {
             if (err) {
                 throw err;
@@ -138,7 +138,7 @@ function addEmployee() {
             startPrompt()
         })
     })
-}
+};
 
 //updating employee
 function updateEmployee() {
@@ -173,7 +173,7 @@ function updateEmployee() {
     });
   });
 
-  }
+};
 
 //adding employee role
 function addRole() { 
@@ -206,7 +206,7 @@ function addRole() {
   
       });
     });
-    }
+};
 
 //adding department
 function addDepartment() { 
@@ -231,4 +231,4 @@ function addDepartment() {
             }
         )
     })
-  }
+};
