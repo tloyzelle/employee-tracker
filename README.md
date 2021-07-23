@@ -21,6 +21,7 @@ Run 'npm i' within terminal to download all needed dependencies.
 Then 'node emptrak.js' to begin interface.
 
 ## Use
+https://user-images.githubusercontent.com/82417321/126731241-5ca2b4cd-1668-4ea3-a440-7744e77641e7.mov
 
 ## License 
 The application is under the MIT license.
