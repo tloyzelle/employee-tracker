@@ -1,13 +1,13 @@
-DROP DATABASE IF EXISTS manage_db;
+DROP DATABASE IF EXISTS manager_DB;
 
-CREATE DATABASE manage_db;
+CREATE DATABASE manager_DB;
 
-USE manage_db;
+USE manager_DB;
 
 CREATE TABLE department (
-    id INT NOT NULL AUTO_INCREMENT,
-    name VARCHAR(30) NULL,
-    PRIMARY KEY (id)
+  id INT NOT NULL AUTO_INCREMENT,
+  name VARCHAR(30) NULL,
+  PRIMARY KEY (id)
 );
 
 CREATE TABLE role (
@@ -15,7 +15,6 @@ CREATE TABLE role (
   title VARCHAR(30) NULL,
   salary DECIMAL(10,2) NULL,
   department_id INT NULL,
-  FOREIGN KEY (department_id) REFERENCES department(id),
   PRIMARY KEY (id)
 );
 

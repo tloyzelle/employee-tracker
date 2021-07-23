@@ -10,7 +10,7 @@ const connection = mysql.createConnection({
     user: 'root',
     //password and database
     password: 'Otter1163427!',
-    databse: 'manage.db'
+    database: 'manager_DB'
 });
 //beginning connection
 connection.connect(function(err) {
@@ -82,7 +82,8 @@ function viewAllEmployees() {
 function viewAllRoles() {
     connection.query('SELECT employee.first_name, employee.last_name, role.title AS TITLE FROM employee JOIN role ON employee.role_id = role.id;',
     function(err, res) {
-        if (err) throw errconsole.table(res)
+        if (err) throw err
+        console.table(res)
         startPrompt()
     })
 }
