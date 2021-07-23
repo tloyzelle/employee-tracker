@@ -23,6 +23,8 @@ Then 'node emptrak.js' to begin interface.
 ## Use
 https://user-images.githubusercontent.com/82417321/126731241-5ca2b4cd-1668-4ea3-a440-7744e77641e7.mov
 
+<img width="915" alt="Screen Shot 2021-07-22 at 10 33 50 PM" src="https://user-images.githubusercontent.com/82417321/126731333-ecd74e77-e235-45a6-9d71-99aba5c3a17a.png">
+
 ## License 
 The application is under the MIT license.
 
