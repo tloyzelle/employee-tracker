@@ -35,7 +35,37 @@ function startPrompt() {
                 'Add Employee Department'
             ]
         }
-    ])
+    ]).then(function(val) {
+        switch (val.choice) {
+            case "Employee List":
+              viewAllEmployees();
+            break;
+    
+          case "Employee Roles":
+              viewAllRoles();
+            break;
+          case "Employee Departments":
+              viewAllDepartments();
+            break;
+          
+          case "Employee Updates":
+                addEmployee();
+              break;
+    
+          case "Add Employee":
+                updateEmployee();
+              break;
+      
+            case "Add Role for Employee":
+                addRole();
+              break;
+      
+            case "Add Employee Department":
+                addDepartment();
+              break;
+    
+            }
+    })
 }
 
 //view employees
