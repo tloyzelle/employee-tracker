@@ -1,4 +1,4 @@
-# Employee_Tracker
+# employee-tracker
 
 ## Table of Contents
 
